@@ -26,6 +26,4 @@ At the moment, I am unaware if you need to install Ruby and Jekyll yourself, or 
 
 ### Deployment
 
-Given that I'm hosting this on GitHub Pages, they seem chill with me just committing the full `_site/` directory, so I assume that's what's being deployed. If not, that sucks. But Jekyll should theoretically build that for you every time you save, assuming you ran that first command, anyway.
-
-My point being, you don't really need to "deploy" it, just commit the changes and GitHub just handles the rest for you. Neat.
+Deployment is very straightforward, just edit the source files and push it to GitHub. GitHub Pages will automatically build and deploy it for you.
