@@ -1,0 +1,13 @@
+# Site settings
+title: Duskfall
+description: My personal website.
+
+# Frontmatter defaults
+defaults:
+  - scope:
+      path: ""  # Applies to all files
+    values:
+      layout: default
+
+exclude:
+  - README.md

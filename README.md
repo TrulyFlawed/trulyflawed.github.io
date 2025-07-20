@@ -6,7 +6,7 @@ This is my personal, statically-generated site using Jekyll. At the moment, it d
 
 As it uses Jekyll, you can build and run a local copy of the site that automatically refreshes using the following command:
 
-```js
+```
 bundle exec jekyll serve --livereload
 ```
 
