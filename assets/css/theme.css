@@ -1,0 +1,102 @@
+/* If browser/OS theme default is light or unspecified we
+ * default to light theme. */
+html {
+	--primary-text: #000;
+	--primary-background: #fff;
+	--secondary-text: #fff;
+	/* Yes I know these are in RGB, I need to fix that later. */
+	--link-color: rgb(253, 117, 128);
+	--link-color-highlighted: rgb(255, 160, 171);
+	--secondary-background: rgb(51, 51, 51);
+}
+
+/* If browser/OS theme default is dark, we select
+ * dark to avoid unwanted flash of light on page load. */
+@media (prefers-color-scheme: dark) {
+	html {
+		--primary-text: #fff;
+		--primary-background: #000;
+		--secondary-text: #000;
+		--link-color: rgb(253, 117, 128);
+		--link-color-highlighted: rgb(255, 160, 171);
+	}
+}
+
+/* *,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", sans-serif;
+} */
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	height: 100dvh;
+
+	font-size: 1rem;
+	color: var(--primary-text);
+
+	background-color: var(--primary-background);
+
+	transition: ease 0.15s;
+}
+
+p {
+	margin: 0.125rem;
+	/* text-align: center; */
+	
+	white-space: normal;
+	
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+hr {
+	color: var(--secondary-background);
+	background-color: var(--secondary-background);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: var(--link-color);
+	display: inline-flex;
+	gap: 0.1rem;
+	align-items: center;
+	justify-content: center;
+
+	text-decoration: 1px underline;
+	text-underline-offset: 0.2em;
+
+	outline: 0px solid transparent;
+	fill: var(--primary-text);
+	transition: ease 0.15s;
+	
+	user-select: none;
+	-webkit-user-select: none;
+	padding: 0.125rem;
+	border-radius: 0.25rem;
+
+	&:hover,
+	&:focus-visible {
+		color: var(--link-color-highlighted);
+		text-decoration-thickness: 2px;
+	}
+
+	& span {
+		/* Visual correction of "differences"
+		 * in left & right padding. */
+		padding-left: 0.125rem;
+	}
+
+	& svg {
+		width: 1rem;
+		height: 1rem;
+		fill: currentColor;
+	}
+}
