@@ -6,44 +6,13 @@
 	{% include global-head.html %}
 </head>
 <body>
-	<header>
-		<a href="/">Home</a>
-		<nav>
-			<a href="/blog/">Blog</a>
-			<a href="/portfolio/">Portfolio</a>
-			<a href="/about/">About</a>
-			<a href="/contact/">Contact</a>
-		</nav>
-	</header>
+	{% include header.html %}
 	
-	{{ content }}
+	<main>
+		{{ content }}
+	</main>
 	
-	<hr />
-	<footer>
-		<h2>Socials</h2>
-		<ul>
-			<li><a href="https://bsky.app/profile/duskhasfallen.bsky.social">Bluesky</a></li>
-			<li><a href="https://github.com/TrulyFlawed">GitHub</a></li>
-			<li><a href="https://www.tumblr.com/duskfall-has-fallen">Tumblr</a></li>
-			<li><a href="https://substack.com/@duskfall">Substack</a></li>
-		</ul>
-		
-		<h2>Navigation</h2>
-		<ul>
-			<li><a href="/blog/">Blog</a></li>
-			<li><a href="/portfolio/">Portfolio</a></li>
-			<li><a href="/about/">About</a></li>
-			<li><a href="/contact/">Contact</a></li>
-		</ul>
-
-		<p>Copyright &copy; 2025 TrulyFlawed/Duskfall</p>
-
-		<p>This site is hosted on GitHub, where you can access the 
-			<a href="https://github.com/TrulyFlawed/trulyflawed.github.io/">
-				source code
-			</a>.
-		</p>
-	</footer>
+	{% include footer.html %}
 	
 	<!-- External footer design to be used as inspiration. -->
 	<!-- ================================================ -->
