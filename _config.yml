@@ -1,6 +1,10 @@
 # Site settings
 title: Duskfall
-description: "My personal website."
+description: "Dusk's digital garden with mini-essays on knowledge management, tech, and more!."
+
+# Site owner info
+owner: Duskfall
+owner_nickname: Dusk
 
 # Frontmatter defaults
 defaults:
@@ -8,6 +12,11 @@ defaults:
       path: ""  # Applies to all files
     values:
       layout: default
+  - scope:
+      type: posts
+    values:
+      layout: blog
+      permalink: /blog/:title
 
 exclude:
   - README.md

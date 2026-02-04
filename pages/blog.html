@@ -7,6 +7,18 @@ permalink: /blog/
 <html lang="en-US" class="">
 <body>
 	<h1>Blog</h1>
-	<p>If this has worked properly, you will have found this page by visiting <code>trulyflawed.github.io/blog</code></p>
+	
+	<div class="article-list">
+		{% for post in site.posts %}
+			<div class="article">
+				<a href="{{ site.baseurl }}{{ post.url }}" class="center">{{ post.title }}</a>
+				<div class="post-metadata">
+					<!-- <div class="author">{{ post.author }}</div> -->
+					<div class="date">{{ post.date | date: "%B %-d, %Y" }}</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
 </body>
 </html>
