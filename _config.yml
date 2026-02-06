@@ -20,3 +20,17 @@ defaults:
 
 exclude:
   - README.md
+
+include:
+  - _citations/
+  - _pages/
+  - _assets/
+
+collections:
+  pages:
+    output: true
+  citations:
+    output: false
+
+kramdown:
+  footnote_link_text: "[%s]"

@@ -1,0 +1,81 @@
+{%- comment %}
+  {% include citation.html key="kling-announcement" %}
+{% endcomment %}
+
+{%- comment %} === DEBUG INFO === {%- endcomment %}
+{%- comment -%}
+DEBUG: Requested key = "{{ include.key }}"
+DEBUG: Total citations = {{ site.citations.size }}
+DEBUG: All keys = {{ site.citations | map: "key" | join: " | " }}
+DEBUG: Matches found = {{ (site.citations | where: "key", include.key) | size }}
+DEBUG: Matched keys = {{ (site.citations | where: "key", include.key) | map: "key" | join: ", " }}
+{%- endcomment %}
+{%- comment %} === END DEBUG === {%- endcomment %}
+
+{%- assign cited = site.citations | where: "key", include.key | first -%}
+
+{%- if cited -%}
+
+  {%- comment %} === AUTHORS === {%- endcomment %}
+  {%- assign author_string = "" -%}
+  {%- assign author_list = cited.authors | default: empty_array -%}
+
+  {%- if cited.author -%}
+    {%- assign author_string = cited.author | strip -%}
+  {%- elsif author_list.size > 0 -%}
+    {%- assign author_parts = "" | split: "," -%}
+
+    {%- for author in author_list -%}
+      {%- if author.name -%}
+        {%- assign name = author.name | strip -%}
+      {%- elsif author.last_name -%}
+        {%- assign name = author.last_name | strip -%}
+        {%- if author.first_name -%}
+          {%- assign name = name | append: ", " | append: author.first_name -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- assign author_parts = author_parts | push: name -%}
+    {%- endfor -%}
+
+    {%- comment %} Join authors nicely {%- endcomment %}
+    {%- if author_parts.size == 1 -%}
+      {%- assign author_string = author_parts[0] | append: ". " -%}
+    {%- elsif author_parts.size > 1 -%}
+      {%- assign author_string = author_parts[0] | append: ", et. al." -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if author_string -%}{{ author_string }} {% endif -%}
+
+  {%- comment %} === LINKED TITLE === {%- endcomment %}
+  {%- assign link_text = cited.title | strip -%}
+  {%- assign link_url = cited.site_url | strip -%}
+  {%- if link_url -%}
+    ["{{ link_text }}"]({{ link_url }})
+  {%- else -%}
+    "{{ link_text }}".
+  {%- endif -%}
+
+  {%- comment %} === WEBSITE NAME === {%- endcomment %}
+  {%- assign website_name = nil -%}
+  {%- assign website_name = cited.website_name -%}
+  {%- if website_name -%}
+    , *{{ website_name }}*
+  {%- endif -%}
+
+  {%- comment %} === SOURCE DATE === {%- endcomment %}
+  {%- assign date = cited.source_date | date: "%B %-d, %Y" -%}
+  {%- if date -%}
+    , {{ date }}
+  {%- endif -%}
+
+  {%- comment %} === ACCESSED DATE === {%- endcomment %}
+  {%- assign accessed = cited.accessed | date: "%B %-d, %Y" -%}
+  {%- if accessed -%}
+    . Retrieved {{ accessed }}.
+  {%- endif -%}
+
+{%- else -%}
+  [Citation not found: {{ include.key }}]
+{%- endif -%}

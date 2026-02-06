@@ -216,3 +216,30 @@ footer {
 	margin-bottom: 1rem;
 	color: #ddd;
 }
+
+sup a {
+	text-decoration: none;
+}
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub { 
+  top: 0.4em; 
+}
+
+.footnotes {
+	& li p {
+		margin-bottom: 0.5rem;
+	}
+
+	& a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: revert;
+		}
+	}
+}

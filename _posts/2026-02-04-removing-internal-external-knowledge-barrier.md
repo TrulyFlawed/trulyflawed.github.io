@@ -1,10 +1,9 @@
 ---
 title: Removing the barrier between internal and external knowledge
-date: 2025-11-16 -0600
+date: 2026-02-04
 author: Duskfall
 ---
 It's an idea I've pondered ever since beginning to place more external knowledge into my Obsidian vault, but I recently decided to do away with the lines that separated internal and external knowledge in my vault.
-
 ## Why would you do that?
 
 You see, separating information like this never really felt like it could be done cleanly. Keeping a collection of information from other people tucked away into a single folder in my vault felt strange, especially as I wanted to organize resources in a similar manner as the rest of my vault.
