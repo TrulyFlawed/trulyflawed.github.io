@@ -1,0 +1,16 @@
+/* Not every layer is used currently; I'm just defining stuff now in case I want to use it later. */
+@layer reset, base, theme, layout, components, utilities, overrides;
+
+@import "/assets/css/reset.css" layer(reset);
+@import "/assets/css/base.css" layer(base);
+@import "/assets/css/theme.css" layer(theme);
+@import "/assets/css/components.css" layer(components);
+
+/* Small layout snippet than can remain here for now, as I don't have much else in here. */
+@layer layout {
+	@media (width < 645px) {
+		:root {
+			--site-width: 100%;
+		}
+	}
+}
