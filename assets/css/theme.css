@@ -17,6 +17,8 @@
 	--color-surface-hover:    oklch(0.90 0 0);
 	--color-text-muted:       oklch(0.45 0 0);
 	--color-text-very-muted:  oklch(0.92 0 0);
+
+	--site-width: 70ch;
 }
 
 /* If browser/OS theme default is dark, we select
@@ -126,7 +128,7 @@ a {
 }
 
 main {
-	inline-size: 70ch;
+	inline-size: var(--site-width);
 	margin: 2rem auto;
 	padding-inline: 1.5rem;
 }
@@ -134,7 +136,7 @@ main {
 header {
 	display: flex;
 	flex-direction: row;
-	inline-size: 70ch;
+	inline-size: var(--site-width);
 	margin: 1.25rem auto;
 	padding-inline: 1.5rem;
 	justify-content: space-between;
@@ -155,7 +157,7 @@ footer {
 	flex-direction: column;
 	margin: 1.25rem auto;
 	
-	inline-size: 70ch;
+	inline-size: var(--site-width);
 
 	& hr {
 		color: var(--color-surface-hover);
@@ -256,5 +258,11 @@ sub {
 		&:hover {
 			text-decoration: revert;
 		}
+	}
+}
+
+@media (width < 645px) {
+	:root {
+		--site-width: 100%;
 	}
 }
