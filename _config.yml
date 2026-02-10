@@ -33,3 +33,4 @@ collections:
 
 kramdown:
   footnote_link_text: "[%s]" # Make inline footnotes closer to Wikipedia's style
+  footnote_backlink: "↩︎" # switch to this symbol so it doesn't appear as an emoji on mobile
