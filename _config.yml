@@ -1,15 +1,14 @@
 # Site settings
 title: Duskfall
-description: "Dusk's digital garden with mini-essays on knowledge management, tech, and more!."
+description: "Dusk's digital garden with mini-essays on knowledge management, tech, and more!"
 
 # Site owner info
 owner: Duskfall
 owner_nickname: Dusk
 
-# Frontmatter defaults
 defaults:
   - scope:
-      path: ""  # Applies to all files
+      path: "" # Applies to all files
     values:
       layout: default
   - scope:
@@ -29,8 +28,8 @@ include:
 collections:
   pages:
     output: true
-  citations:
+  citations: # Just need this here so Jekyll will actually process files in this directory.
     output: false
 
 kramdown:
-  footnote_link_text: "[%s]"
+  footnote_link_text: "[%s]" # Make inline footnotes closer to Wikipedia's style
