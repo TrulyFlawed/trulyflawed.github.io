@@ -1,10 +1,16 @@
 header {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	inline-size: var(--site-width);
 	margin: 1.25rem auto;
-	padding-inline: 1.5rem;
-	justify-content: space-between;
+
+	& .header {
+		display: flex;
+		flex-direction: row;
+		padding-block-end: 1.25rem;
+		justify-content: space-between;
+		padding-inline: 1.5rem;
+	}
 
 	& a {
 		color: var(--color-text-primary);

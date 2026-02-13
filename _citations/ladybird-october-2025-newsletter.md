@@ -1,6 +1,6 @@
 ---
 key: ladybird-october-2025-newsletter
-site_url: https://ladybird.org/newsletter/2025-10-31/#web-platform-tests-wpt
+site_url: https://ladybird.org/newsletter/2025-10-31/
 title: This Month in Ladybird - October 2025
 website_name: Ladybird
 source_date: 2025-10-31
