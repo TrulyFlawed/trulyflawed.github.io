@@ -31,7 +31,7 @@ h2 {
 }
 
 ul, ol {
-	margin: unset;
+	margin: 1.25rem 0;
 	padding-inline-start: 1.25rem;
 }
 
@@ -47,7 +47,7 @@ hr {
 	color: var(--color-surface-hover);
 	background-color: var(--color-surface-hover);
 	box-sizing: border-box;
-	margin: 0;
+	margin: 1rem 0;
 	padding: 0;
 	transition: ease 0.15s;
 }
