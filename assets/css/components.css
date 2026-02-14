@@ -88,14 +88,19 @@ footer {
 	border-radius: 0.5rem;
 	transition: ease 0.15s;
 
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	color: var(--color-text-primary);
+	text-decoration: none;
+
 	&:hover {
 		background-color: var(--color-surface-hover);
 	}
 
-	& a {
-		color: var(--color-text-primary);
+	& .title {
 		font-size: 1.25rem;
-		text-decoration: none;
 		margin-block-end: 0.15rem;
 	}
 
@@ -111,6 +116,14 @@ footer {
 	margin-block-end: 1rem;
 	color: var(--color-text-muted);
 	transition: ease 0.15s;
+
+	& p {
+		margin: 0;
+	}
+
+	& hr {
+		margin: 0; /* Reset to make vertical divider work in blog post metadata */
+	}
 }
 
 .footnotes {
