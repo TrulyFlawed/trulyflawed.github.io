@@ -11,12 +11,12 @@ Web developer, writer, and designer.
 <!-- Automatically generate list of blog posts. -->
 <div class="article-list">
 	{% for post in site.posts %}
-		<div class="article">
-			<a href="{{ site.baseurl }}{{ post.url }}" class="center">{{ post.title }}</a>
+		<a href="{{ site.baseurl }}{{ post.url }}" class="article">
+			<p class="title">{{ post.title }}</p>
 			<div class="post-metadata">
-				<!-- <div class="author">{{ post.author }}</div> -->
-				<div class="date">{{ post.date | date: "%B %-d, %Y" }}</div>
+				<!-- <p class="author">{{ post.author }}</p> -->
+				<p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
 			</div>
-		</div>
+		</a>
 	{% endfor %}
 </div>
