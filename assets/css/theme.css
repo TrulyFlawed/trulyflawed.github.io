@@ -11,6 +11,8 @@
 	--color-link:			  oklch(0.7262 0.1661 17.21);
 	--color-link-hover:       oklch(0.8043 0.1135 12.42);
 
+	--blockquote-border-color: oklch(0.6596 0.2152 23.69);
+
 	--color-surface:          oklch(0.95 0 0);
 	--color-surface-hover:    oklch(0.90 0 0);
 	--color-text-muted:       oklch(0.45 0 0);

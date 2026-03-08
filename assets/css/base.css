@@ -30,6 +30,11 @@ h2 {
 	text-wrap: balance;
 }
 
+h3 {
+	margin-block-start: 1rem;
+	margin-block-end: 0.5rem;
+}
+
 ul, ol {
 	margin: 1.25rem 0;
 	padding-inline-start: 1.25rem;
@@ -105,4 +110,9 @@ sup, sub {
 }
 sub { 
   inset-block-start: 0.4em; 
+}
+
+blockquote {
+	padding-inline-start: 1rem;
+	border-inline-start: 2px solid var(--blockquote-border-color);
 }
