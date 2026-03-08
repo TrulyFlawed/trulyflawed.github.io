@@ -7,9 +7,8 @@ body {
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-
+	display: grid;
+	grid-template-rows: auto 1fr auto; /* Let body take up as much room as possible, creating a sticky footer. */
 	block-size: 100dvh;
 
 	font-size: 1rem;
