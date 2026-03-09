@@ -32,48 +32,63 @@ header {
 }
 
 footer {
-	display: flex;
-	flex-direction: column;
 	margin: 1.25rem auto;
-	
 	inline-size: var(--site-width);
 
-	& hr {
-		color: var(--color-surface-hover);
-		background-color: var(--color-surface-hover);
-		box-sizing: border-box;
-		margin: 0 0 2rem 0;
-		padding: 0;
-	}
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 45ch 1fr 1fr;
+	grid-template-areas:
+		"info otherNav siteNav"
+		"legal legal legal";
+	gap: 0.5rem;
+	
+	padding-block-start: 1.5rem;
+	padding-inline: 1.5rem;
+	
+	border-block-start: 2px solid var(--color-surface-hover);
 
-	& h2 {
-		font-size: 1rem;
-		color: var(--color-text-very-muted);
-		font-weight: 400;
-		font-variant-caps: all-small-caps;
-	}
-
+	/* General element styles */
 	& ul, ol {
+		margin: unset;
+		padding: unset;
 		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	& .footer-columns {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		padding-inline: 1.5rem;
-	}
-
-	& #footer-summary {
-		max-width: 45ch;
 	}
 
 	& a {
-		/* color: var(--primary-text); */
 		text-decoration: none;
+		padding: 0.15rem 0.25rem;
 	}
+
+	/* Footer element styles */
+	& .footer-info {
+		grid-area: info;
+	}
+	
+	& .site-nav {
+		grid-area: siteNav;
+	}
+
+	& .other-nav {
+		grid-area: otherNav;
+	}
+
+	& .legal {
+		grid-area: legal;
+		margin-inline: auto;
+		color: var(--color-text-muted);
+	}
+}
+
+@media (width <= 70ch) {
+	footer {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"info"
+			"otherNav"
+			"siteNav"
+			"legal";
+	}	
 }
 
 .article-list {
