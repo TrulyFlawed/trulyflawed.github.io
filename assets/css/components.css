@@ -4,6 +4,8 @@ header {
 	inline-size: var(--site-width);
 	margin: 1.25rem auto;
 
+	container-type: inline-size;
+
 	& .header {
 		display: flex;
 		flex-direction: row;
@@ -153,4 +155,63 @@ footer {
 			text-decoration: revert;
 		}
 	}
+}
+
+#my-sidebar {
+	position: fixed;
+	inset: auto;
+	top: 0;
+	right: -100%;
+	width: 100%;
+	height: 100vh;
+	transition: right 0.3s ease;
+
+	color: var(--color-text-primary);
+	background-color: var(--color-surface);
+
+	overflow: auto;
+	overscroll-behavior: none;
+
+	border: none;
+	padding: 1.25rem;
+
+	& nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	& button.menu-icon {
+		float: right;
+	}
+}
+
+#my-sidebar:popover-open {
+	right: 0;
+}
+
+.menu-icon {
+	background-color: transparent;
+	border: none;
+	color: currentColor;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+}
+
+.main-nav {
+	align-items: center;
+	display: flex;
+
+	& .menu-icon {
+		display: none;
+	}
+}
+
+@container (max-width: 420px) {
+	.main-nav a { display: none; }
+	.main-nav .menu-icon { display: flex; }
 }
