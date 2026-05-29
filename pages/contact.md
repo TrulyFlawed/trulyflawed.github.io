@@ -3,7 +3,7 @@ title: "Contact"
 layout: default
 permalink: /contact/
 ---
-# Let's talk
+# Let's talk!
 
 Want to get in touch? Feel free to hit me up! A small, thoughtful message means a lot to me <3
 
