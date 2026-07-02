@@ -5,6 +5,8 @@ permalink: /blog/
 ---
 # Blog
 
+For random thoughts.
+
 <div class="article-list">
 	{% for post in site.posts %}
 		<a href="{{ site.baseurl }}{{ post.url }}" class="article">
