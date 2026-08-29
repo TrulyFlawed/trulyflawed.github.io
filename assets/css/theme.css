@@ -32,5 +32,6 @@
 		--color-surface-hover:    oklch(0.30 0 0);
 
 		--color-text-muted:       oklch(0.85 0 0);
+		--color-text-very-muted:  oklch(0.5 0 0);
 	}
 }

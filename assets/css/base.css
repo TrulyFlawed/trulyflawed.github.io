@@ -38,6 +38,9 @@ ul, ol {
 	margin: 1.25rem 0;
 	padding-inline-start: 1.25rem;
 }
+li::marker {
+	color: var(--color-text-very-muted);
+}
 
 p {
 	margin-block-end: 1.25rem;
