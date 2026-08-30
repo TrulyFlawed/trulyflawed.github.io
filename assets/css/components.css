@@ -157,12 +157,9 @@ footer {
 	}
 
 	& :target {
-		background-color: var(--footnote-highlight-bg);
-		/* color: var(--color-surface); */
-
 		padding: 0 0.15em;
 		border-radius: 0.15em;
-		transition: background-color 0.3s ease;
+		animation: footnote-highlight 2.5s ease-out forwards;
 
 		& a.reversefootnote {
 			color: var(--color-link);
@@ -175,11 +172,20 @@ footer {
 	}
 }
 sup:target {
-	background-color: var(--footnote-highlight-bg);
+	border-radius: 0.25em;
+	animation: footnote-highlight 2.5s ease-out forwards;
+}
 
-	padding: 0 0.15em;
-	border-radius: 0.15em;
-	transition: background-color 0.3s ease;
+@keyframes footnote-highlight {
+	0% {
+		background-color: var(--footnote-highlight-bg);
+	}
+	60% {
+		background-color: var(--footnote-highlight-bg);
+	}
+	100% {
+		background-color: transparent;
+	}
 }
 
 #my-sidebar {
