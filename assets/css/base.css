@@ -122,3 +122,12 @@ blockquote {
 :target {
 	scroll-margin-top: 4rem;
 }
+
+::selection {
+	background-color: var(--blockquote-border-color);
+	color: var(--color-text-primary);
+
+	@media (prefers-color-scheme: light) {
+		color: var(--color-text-secondary);
+	}
+}
