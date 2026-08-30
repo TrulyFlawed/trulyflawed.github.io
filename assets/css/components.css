@@ -150,10 +150,36 @@ footer {
 		color: var(--color-text-very-muted);
 		text-decoration: none;
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			color: var(--color-link);
 		}
 	}
+
+	& :target {
+		background-color: var(--footnote-highlight-bg);
+		/* color: var(--color-surface); */
+
+		padding: 0 0.15em;
+		border-radius: 0.15em;
+		transition: background-color 0.3s ease;
+
+		& a.reversefootnote {
+			color: var(--color-link);
+
+			&:hover,
+			&:focus-visible {
+				color: var(--color-link-hover);
+			}
+		}
+	}
+}
+sup:target {
+	background-color: var(--footnote-highlight-bg);
+
+	padding: 0 0.15em;
+	border-radius: 0.15em;
+	transition: background-color 0.3s ease;
 }
 
 #my-sidebar {

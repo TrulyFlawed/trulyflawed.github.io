@@ -17,6 +17,9 @@
 	--color-surface-hover:    oklch(0.90 0 0);
 	--color-text-muted:       oklch(0.45 0 0);
 	--color-text-very-muted:  oklch(0.92 0 0);
+
+	/* --footnote-highlight-bg: #fff3cd; */
+	--footnote-highlight-bg: oklch(0.6596 0.2152 23.69 / 15%);
 }
 
 /* If browser/OS theme default is dark, we select
@@ -33,5 +36,9 @@
 
 		--color-text-muted:       oklch(0.85 0 0);
 		--color-text-very-muted:  oklch(0.5 0 0);
+
+		/* --footnote-highlight-bg: oklch(0.964 0.0509 92.55); */
+		/* --footnote-highlight-bg: oklch(0.2765 0.0814 23.69); */
+		--footnote-highlight-bg: oklch(from var(--color-surface) calc(l + 0.05) calc(c + 0.055) calc(h + 23));
 	}
 }

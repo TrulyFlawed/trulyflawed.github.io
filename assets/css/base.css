@@ -118,3 +118,7 @@ blockquote {
 	padding-inline-start: 1rem;
 	border-inline-start: 2px solid var(--blockquote-border-color);
 }
+
+:target {
+	scroll-margin-top: 4rem;
+}
