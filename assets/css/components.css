@@ -96,7 +96,15 @@ footer {
 	flex-direction: column;
 	gap: 1rem;
 }
+.basic-link {
+	margin-inline-start: auto;
+	color: var(--color-text-muted);
+	text-decoration: none;
 
+	&:hover, &:focus-visible {
+		color: var(--color-text-primary);
+	}
+}
 .article {
 	background-color: var(--color-surface);
 	padding: 0.75rem;
@@ -110,7 +118,7 @@ footer {
 	color: var(--color-text-primary);
 	text-decoration: none;
 
-	&:hover {
+	&:hover, &:focus-visible {
 		background-color: var(--color-surface-hover);
 	}
 

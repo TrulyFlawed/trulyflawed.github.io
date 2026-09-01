@@ -12,7 +12,6 @@ For random thoughts.
 		<a href="{{ site.baseurl }}{{ post.url }}" class="article">
 			<p class="title">{{ post.title }}</p>
 			<div class="post-metadata">
-				<!-- <p class="author">{{ post.author }}</p> -->
 				<p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
 			</div>
 		</a>
