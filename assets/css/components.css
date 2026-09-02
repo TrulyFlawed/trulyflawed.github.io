@@ -20,7 +20,7 @@ header {
 		color: var(--color-text-primary);
 		text-decoration: none;
 
-		&:hover {
+		&:hover, &:focus-visible {
 			color: var(--color-link);
 		}
 	}
