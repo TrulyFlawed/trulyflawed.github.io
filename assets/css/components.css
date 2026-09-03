@@ -101,6 +101,9 @@ footer {
 	color: var(--color-text-muted);
 	text-decoration: none;
 
+	padding: 0.5rem;
+	outline: 2px solid var(--color-surface-hover);
+
 	&:hover, &:focus-visible {
 		color: var(--color-text-primary);
 	}
