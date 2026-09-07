@@ -2,6 +2,7 @@
 title: "Portfolio"
 layout: default
 permalink: /portfolio/
+description: "A list of my projects."
 ---
 # My portfolio
 

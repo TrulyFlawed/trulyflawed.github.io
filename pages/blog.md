@@ -2,6 +2,7 @@
 title: "Blog"
 layout: default
 permalink: /blog/
+description: "The smaller, unstructured writings of mine."
 ---
 # Blog
 

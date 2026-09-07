@@ -2,6 +2,7 @@
 title: "Contact"
 layout: default
 permalink: /contact/
+description: "Get in contact with Dusk using Signal or email."
 ---
 # Let's talk!
 

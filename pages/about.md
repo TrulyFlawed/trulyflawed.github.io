@@ -2,6 +2,7 @@
 title: "About"
 layout: default
 permalink: /about/
+description: "Learn more about Duskfall, her history, her aspirations, and her site."
 ---
 # About me
 
