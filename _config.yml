@@ -1,6 +1,8 @@
 # Site settings
 title: Duskfall
 description: "Dusk's digital garden with mini-essays on knowledge management, tech, and more!"
+url: "https://duskfall.dev"
+baseurl: ""
 
 # Site owner info
 owner: Duskfall
@@ -21,7 +23,7 @@ exclude:
   - README.md
 
 include:
-  - _citations/
+  # - _citations/
   - _pages/
   - _assets/
 
@@ -30,6 +32,9 @@ collections:
     output: true
   citations: # Just need this here so Jekyll will actually process files in this directory.
     output: false
+
+plugins:
+  - jekyll-sitemap
 
 kramdown:
   footnote_link_text: "[%s]" # Make inline footnotes closer to Wikipedia's style

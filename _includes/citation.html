@@ -12,7 +12,7 @@ DEBUG: Matched keys = {{ (site.citations | where: "key", include.key) | map: "ke
 {%- endcomment %}
 {%- comment %} === END DEBUG === {%- endcomment %}
 
-{%- assign cited = site.citations | where: "key", include.key | first -%}
+{%- assign cited = site.data.citations | where: "key", include.key | first -%}
 
 {%- if cited -%}
 
