@@ -33,3 +33,7 @@ Visit `http://<your-local-ip>:4000`.
 ## Deployment
 
 Edit the source, commit, and push to `main`. GitHub Pages builds and publishes automatically. After deploy, check https://duskfall.dev/.
+
+## License
+
+Site code is licensed under MIT. Original content is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)

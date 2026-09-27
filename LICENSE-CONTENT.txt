@@ -1,0 +1,7 @@
+Original writing and other original content on this site
+are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+Code is under MIT; see LICENSE.
+
+Third-party material (quotes, citations, etc.) remains under its own terms.
