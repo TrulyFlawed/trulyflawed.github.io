@@ -1,29 +1,35 @@
-# My personal site
+# duskfall.dev
 
-This is my personal, statically-generated site using Jekyll. At the moment, it does not have much going for it.
+My personal website built with Jekyll. Developed with the goal of minimal JavaScript use, modern HTML & CSS, and few dependencies.
 
-## Build & deployment
+Live site: https://duskfall.dev/
 
-Because I'm using GitHub Pages, building and deploying the site is actually pretty straightforward.
+## Setup
 
-### Building
+1. Install Ruby (see [Jekyll’s install docs](https://jekyllrb.com/docs/installation/)).
+2. From the repo root:
+   ```bash
+   bundle install
+   ```
 
-As it uses Jekyll, you can build and run a local copy of the site that automatically refreshes using the following command:
+## Local development
 
-```
+Serve with live reload:
+
+```bash
 bundle exec jekyll serve --livereload
 ```
 
-If you want to access a preview from a different device (like a phone), you will have to run the following command:
+Then open http://127.0.0.1:4000.
 
+To preview from another device on your network:
+
+```bash
+bundle exec jekyll serve --host 0.0.0.0 --livereload
 ```
-bundle exec jekyll serve --host 0.0.0.0
-```
 
-Then, you can visit your site via `http://<your-local-ip>:4000`.
+Visit `http://<your-local-ip>:4000`.
 
-At the moment, I am unaware if you need to install Ruby and Jekyll yourself, or if having the Gemfiles and whatnot in the repository allows you to run the command as is. Either way, I'd just assume you have to download it, so follow the steps as outlined in [Jekyll's official documentation](https://jekyllrb.com/docs/installation/).
+## Deployment
 
-### Deployment
-
-Deployment is very straightforward, just edit the source files and push it to GitHub. GitHub Pages will automatically build and deploy it for you.
+Edit the source, commit, and push to `main`. GitHub Pages builds and publishes automatically. After deploy, check https://duskfall.dev/.
