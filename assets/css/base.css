@@ -61,37 +61,19 @@ hr {
 
 a {
 	color: var(--color-link);
-	display: inline-flex;
-	gap: 0.1rem;
-	align-items: center;
-	justify-content: center;
 
-	text-decoration: 1px underline;
+	text-decoration: 0.0625em underline;
 	text-underline-offset: 0.2em;
 
 	outline: 0px solid transparent;
-	fill: currentColor;
 	transition: ease 0.15s;
 
-	/* padding: 0.125rem; */
 	border-radius: 0.25rem;
 
 	&:hover,
 	&:focus-visible {
 		color: var(--color-link-hover);
-		text-decoration-thickness: 2px;
-	}
-
-	& span {
-		/* Visual correction of "differences"
-		 * in left & right padding. */
-		padding-inline-start: 0.125rem;
-	}
-
-	& svg {
-		inline-size: 1rem;
-		block-size: 1rem;
-		fill: currentColor;
+		text-decoration-thickness: 0.125em;
 	}
 }
 
