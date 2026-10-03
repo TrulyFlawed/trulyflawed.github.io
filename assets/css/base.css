@@ -44,10 +44,7 @@ li::marker {
 
 p {
 	margin-block-end: 1.25rem;
-	
-	white-space: normal;
-
-	word-wrap: wrap pretty;
+	text-wrap: pretty;
 }
 
 hr {
