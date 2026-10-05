@@ -93,10 +93,15 @@ footer {
 .article-list {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	/* gap: 1rem; */
+	border-radius: 1rem;
+}
+.blog-redirect-button {
+	display: flex;
 }
 .basic-link {
 	margin-inline-start: auto;
+	margin-block-start: 1rem;
 	color: var(--color-text-muted);
 	text-decoration: none;
 
@@ -108,9 +113,8 @@ footer {
 	}
 }
 .article {
-	background-color: var(--color-surface);
 	padding: 0.75rem;
-	border-radius: 0.5rem;
+	border-radius: 0;
 	transition: ease 0.15s;
 
 	display: flex;
@@ -120,8 +124,21 @@ footer {
 	color: var(--color-text-primary);
 	text-decoration: none;
 
+	border-block-end: 0.125rem solid var(--color-surface-hover);
+
+	&:first-child {
+		border-start-start-radius: 0.75rem;
+		border-start-end-radius: 0.75rem;
+	}
+	&:last-child {
+		border-block-end: none !important;
+		outline: none;
+		border-end-start-radius: 0.75rem;
+		border-end-end-radius: 0.75rem;
+	}
+
 	&:hover, &:focus-visible {
-		background-color: var(--color-surface-hover);
+		background-color: var(--color-surface);
 	}
 
 	& .title {

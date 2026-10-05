@@ -6,7 +6,7 @@ layout: "default"
 
 Web developer, writer, and designer.
 
-## Blog
+## Recent posts
 
 <div class="article-list">
 	{% for post in site.posts limit: 4 %}
@@ -17,6 +17,7 @@ Web developer, writer, and designer.
 			</div>
 		</a>
 	{% endfor %}
-
+</div>
+<div class="blog-redirect-button">
 	<a href="/blog" class="basic-link">See all blog posts</a>
 </div>
