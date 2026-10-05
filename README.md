@@ -36,4 +36,4 @@ Edit the source, commit, and push to `main`. GitHub Pages builds and publishes a
 
 ## License
 
-Site code is licensed under MIT. Original content is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+Source code is licensed under MIT, original content is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), and third-party material remains under its own terms.
