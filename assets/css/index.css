@@ -5,12 +5,3 @@
 @import "/assets/css/base.css" layer(base);
 @import "/assets/css/theme.css" layer(theme);
 @import "/assets/css/components.css" layer(components);
-
-/* Small layout snippet than can remain here for now, as I don't have much else in here. */
-@layer layout {
-	@media (width < 645px) {
-		:root {
-			--site-width: 100%;
-		}
-	}
-}

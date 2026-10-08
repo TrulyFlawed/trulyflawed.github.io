@@ -1,5 +1,5 @@
 :root {
-	--site-width: 70ch;
+	--site-width: min(70ch, 100%);
 }
 
 body {
@@ -40,11 +40,13 @@ ul, ol {
 }
 li::marker {
 	color: var(--color-text-very-muted);
+	transition: color 0.15s ease;
 }
 
 p {
 	margin-block-end: 1.25rem;
 	text-wrap: pretty;
+	transition: color 0.15s ease;
 }
 
 hr {

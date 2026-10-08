@@ -1,19 +1,34 @@
-<footer>
-	<div class="footer-info">
-		<p>Hiya, I'm Duskfall (she/her)! I'm a beginner web developer from the United States. I like writing and open source.</p>
+<footer class="site-footer">
+	<p class="footer-info">Hiya, I'm Duskfall (she/her)! I'm a beginner web developer from the United States. I like writing and open source.</p>
+
+	<nav class="footer-nav" aria-label="Footer">
+		<div>
+			<!-- <h2 class="footer-heading">Site</h2> -->
+			<ul role="list">
+				<li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+				<li><a href="{{ '/portfolio/' | relative_url }}">Portfolio</a></li>
+				<li><a href="{{ '/about/' | relative_url }}">About</a></li>
+				<li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+			</ul>
+		</div>
+		<div>
+			<!-- <h2 class="footer-heading">Elsewhere</h2> -->
+			<ul role="list">
+				<li><a href="{{ '/links/' | relative_url }}">Links</a></li>
+				<li><a href="https://ko-fi.com/duskhasfallen">Donate</a></li>
+				<li><a href="https://github.com/TrulyFlawed/trulyflawed.github.io">Code</a></li>
+				<!-- <li><a href="{{ '/colophon/' | relative_url }}">Colophon</a></li> -->
+			</ul>
+		</div>
+	</nav>
+
+	<div class="footer-meta">
+		<p class="legal">&copy; {{ site.time | date: "%Y" }} {{ site.owner }}.
+			Code is <a href="https://github.com/TrulyFlawed/trulyflawed.github.io/blob/main/LICENSE-SOURCE.md">MIT</a>;
+			original content is <a href="https://creativecommons.org/licenses/by/4.0/">CC&nbsp;BY&nbsp;4.0</a>.</p>
+		<ul class="meta-links" role="list" aria-label="About this site">
+			<li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+			<li><a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a></li>
+		</ul>
 	</div>
-	<ul class="footer-nav other-nav">
-		<li><a href="{{ site.baseurl }}/links/">Links</a></li>
-		<li><a href="https://ko-fi.com/duskhasfallen">Donate</a></li>
-		<li><a href="https://github.com/TrulyFlawed/trulyflawed.github.io/">Code</a></li>
-	</ul>
-	<ul class="footer-nav site-nav">
-		<li><a href="/blog/">Blog</a></li>
-		<li><a href="/portfolio/">Portfolio</a></li>
-		<li><a href="/about/">About</a></li>
-		<li><a href="/contact/">Contact</a></li>
-	</ul>
-	<p class="legal">&copy; 2026 {{ site.owner }}. Site code is
-		<a href="https://github.com/TrulyFlawed/trulyflawed.github.io/blob/main/LICENSE.txt">MIT</a>. Original content is
-		<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a></p>
 </footer>
