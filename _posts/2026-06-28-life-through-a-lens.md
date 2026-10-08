@@ -1,5 +1,6 @@
 ---
 title: "Life through a lens"
+description: "Let your view be continually refined or changed to see with clarity."
 date: 2026-07-02
 author: Duskfall
 ---

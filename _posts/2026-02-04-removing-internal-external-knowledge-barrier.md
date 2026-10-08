@@ -1,5 +1,6 @@
 ---
 title: Removing the barrier between internal and external knowledge
+description: "Intentionally distancing myself from my own works, and opening up to others' ideas."
 date: 2026-02-04
 author: Duskfall
 ---

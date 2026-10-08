@@ -1,5 +1,6 @@
 ---
 title: "My ethical consumption is privileged"
+description: "It isn't viable for many, nor a perfect solution."
 date: 2026-07-02
 author: Duskfall
 ---

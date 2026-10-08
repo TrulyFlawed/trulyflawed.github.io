@@ -1,5 +1,6 @@
 ---
 title: Ladybird passes Apple's 90% threshold on web-platform-tests
+description: "A major milestone, but with a long path ahead of it."
 date: 2026-02-13
 author: Duskfall
 ---

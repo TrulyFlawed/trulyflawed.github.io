@@ -1,5 +1,6 @@
 ---
 title: "Enthralled by OpenStreetMap"
+description: "I've taken a rather sudden liking to the project, and hope to do good with my contributions."
 date: 2026-08-28
 author: Duskfall
 ---

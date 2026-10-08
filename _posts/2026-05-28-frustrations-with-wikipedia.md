@@ -1,5 +1,6 @@
 ---
 title: Frustrations with Wikipedia
+description: "Its policies, ultimately good-natured, make covering niche, technical subjects difficult."
 date: 2026-05-28
 author: Duskfall
 ---

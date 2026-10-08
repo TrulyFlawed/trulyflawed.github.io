@@ -146,6 +146,11 @@ footer {
 		margin-block-end: 0.15rem;
 	}
 
+	& .subtitle {
+		/* margin-block-end:  */
+		color: var(--color-text-muted);
+	}
+
 	& .post-metadata {
 		margin-block-end: 0;
 	}
