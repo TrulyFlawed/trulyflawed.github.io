@@ -2,6 +2,7 @@
 title: "At least I tried to make change"
 description: "Voting alone is insufficient, but scoffing at it when you don't even try to change things is worse."
 date: 2026-10-12
+modified: 2026-10-12
 author: Duskfall
 ---
 I was talking with a friend recently about how I would be voting in this year's Midterm elections. I know, voting isn't exactly a fun topic but we both share a lot of ideas politically.
@@ -33,6 +34,14 @@ I hate this game of tug-of-war I have to play with politics. I don't vote for De
 Much larger change obviously comes from organizing, but as I've said, that's difficult for many. For the average voter, I think it's more than acceptable to have them vote for the better of two candidates, even when both suck. It is certainly better than sitting on our asses and letting the worse one win.
 
 Letting things get worse because you can't quickly or immediately make them better is just not a good mindset to have, in my opinion.
+
+### Addendum
+
+A Bluesky user brought up a great point that helped me realize that I, in fact, completely overlooked independent parties. Some of the language in this section makes this piece come off as very "vote blue no matter who" but I want to be very clear that if there is an independent politician who you believe in, vote for them! Do not vote for the major parties just because of some broader strategic goal that ultimately only benefits the major parties.
+
+I myself plan to vote for an independent this year, so it's actually really unfortunate that I had completely forgotten to address that. Please vote for who you believe in when possible. If there isn't any politician who you fully support in or believe either, that's fine if you don't want to vote for them. Maybe go raise hell by calling your representatives or other elected officials to say that they're doing a bad job. Find something to do if you don't plan to vote!
+
+I have more to think about on this topic now, so again, all credits to [siberionhusky.bsky.social](https://bsky.app/profile/did:plc:sxckdvxjucixtfvdqdfgf7by) for her comments!
 
 ## So what?
 
