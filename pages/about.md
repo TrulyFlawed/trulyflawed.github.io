@@ -6,11 +6,11 @@ description: "Learn more about Duskfall, her history, her aspirations, and her s
 ---
 # About me
 
-Hiya, I'm Duskfall, an trans woman who loves a lot of things, including history, open source, art, writing, reading, note-taking/knowledge management, programming, and more. I grew up in the Midwest region of the United States and have indigenous ancestry.
+Hiya, I'm Duskfall, a trans woman who loves a lot of things, including history, open source, art, writing, reading, note-taking/knowledge management, programming, and more. I grew up in the Midwest region of the United States and have indigenous ancestry.
 
 ## Aspirations
 
-I want to build a world that values creativity and craftsmanship. I want to build a world that values empathy and care for one another.. I want to build a world that values education and the pursuit of knowledge. I want to build a world where anyone can be safe and secure.
+I want to build a world that values creativity and craftsmanship. I want to build a world that values empathy and care for one another. I want to build a world that values education and the pursuit of knowledge. I want to build a world where anyone can be safe and secure.
 
 The world has a lot of problems. I know I won't solve them or ever see the world I dream of, but the least I can do is work toward that vision.
 
