@@ -12,7 +12,13 @@ I mostly started alone, but I actually very recently roped two friends into mapp
 
 Why am I mapping so much? Hate Google, simple as. But being a little bit less blunt, Google Maps has some of the most blatantly incorrect map details I've ever seen. Some of it is slightly excusable, like a road-shaped marking on the ground being mapped as a road, even if it's just a proposed road that hasn't been built yet. I'd get why an algorithm makes that mistake. I don't get how it hallucinates a road THROUGH a major section of the high school. That part of the building consequently DOES NOT EXIST on the map anymore.
 
-I would show screenshots but unfortunately I'm not going to figure out images on my blog right now. Seems like too much work for me at 21:00 (I will be up late working on shit anyway...). But seriously, Google botches the map in several areas to a ridiculous degree. Part of me thinks it's probably better to have no data than bad data, so...
+<figure class="compare">
+	<div class="compare-images">
+		<img src="/assets/images/map-high-school-google-maps.jpg" style="--w: 1323px; --h: 1119px" alt="A screenshot of a high school on Google Maps. Several sections of the building are displayed as separate from the main building, and a road on the north side of the building cuts through an area where the building should be." />
+		<img src="/assets/images/map-high-school-openstreetmap.jpg" style="--w: 986px; --h: 885px" alt="A screenshot of a high school on OpenStreetMap. The building outline is more detailed and fully connected. The road cutting through where the building should be is not present on the map." />
+	</div>
+	<figcaption>Google Maps (first) and OpenStreetMap (second).</figcaption>
+</figure>
 
 So yeah. Maps. Love 'em. Go map your community, I bet there's things missing. Open knowledge is awesome and cool and freely licensed information benefits everyone. We should not have to be dependent on corporations like Google for a goddamn map of our communities.
 
