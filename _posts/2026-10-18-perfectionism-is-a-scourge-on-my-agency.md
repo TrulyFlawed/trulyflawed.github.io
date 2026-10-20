@@ -1,7 +1,7 @@
 ---
 title: "Perfectionism is a scourge on my agency"
 description: "My affinity for craftsmanship consistently prevents me from finishing my works, and it sucks."
-date: 2026-10-18
+date: 2026-10-19
 # modified: 2026-10-18
 author: Duskfall
 ---
