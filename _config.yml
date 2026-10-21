@@ -17,7 +17,7 @@ defaults:
       type: posts
     values:
       layout: blog
-      permalink: /blog/:title
+      permalink: /blog/:title/
 
 exclude:
   - README.md
@@ -35,6 +35,7 @@ collections:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
 
 kramdown:
   footnote_link_text: "[%s]" # Make inline footnotes closer to Wikipedia's style

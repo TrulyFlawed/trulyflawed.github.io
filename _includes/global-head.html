@@ -15,10 +15,21 @@
      | normalize_whitespace
      | truncate: 160 %}
 <meta property="og:description" content="{{ meta_description | escape }}" />
+<meta name="description" content="{{ meta_description | escape }}">
 <meta property="og:site_name" content="{{ site.title }}" />
 <meta property="og:locale" content="en_US" />
+
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+
+<meta property="og:image" content="{{ '/assets/images/likely-temp-preview-card-image.jpg' | absolute_url }}">
+<meta property="og:image:width" content="960">
+<meta property="og:image:height" content="607">
+<meta property="og:image:alt" content="Parallel cloudbands at sunset illuminated to be a rich magenta color and shadowed by dark purple. The sky behind it is a slate gray that grows a pinkish beige near the dark surface of the open ocean.">
+<meta name="twitter:card" content="summary_large_image">
 
 <meta name="color-scheme" content="dark light" />
 <meta name="theme-color" content="#fcfcfc" media="(prefers-color-scheme: light)" />
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
 <meta name="theme-color" content="#000000" /> <!-- Old browser fallback -->
+{% feed_meta %}
