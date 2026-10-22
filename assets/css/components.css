@@ -2,7 +2,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	inline-size: var(--site-width);
-	margin: 1.25rem auto;
+	margin: 1.25rem auto 0;
 
 	container-type: inline-size;
 
@@ -21,8 +21,12 @@ header {
 		color: var(--color-text-primary);
 		text-decoration: none;
 
-		&:hover, &:focus-visible {
+		&:hover {
 			color: var(--color-link);
+		}
+		&:focus-visible {
+			outline: 2px solid var(--color-link);
+			outline-offset: 8px;
 		}
 	}
 
@@ -37,7 +41,7 @@ header {
 	--footer-col-gap: 1.5rem;
 
 	inline-size: min(100%, var(--site-width));
-	margin: 1.25rem auto;
+	margin: 0 auto 1.25rem;
 	padding: 1.5rem 1.5rem 1.25rem;
 
 	display: flex;
@@ -72,6 +76,11 @@ header {
 			display: inline-block;
 			padding-block: 0.25rem;
 			text-decoration: none;
+
+			&:focus-visible {
+				outline: 3px solid var(--color-link);
+				outline-offset: 8px;
+			}
 		}
 
 		& div {
@@ -111,10 +120,13 @@ header {
 			color: inherit;
 			text-decoration-color: color-mix(in oklab, currentColor 40%, transparent);
 
-			&:hover,
-			&:focus-visible {
+			&:hover {
 				color: var(--color-link);
 				text-decoration-color: currentColor;
+			}
+			&:focus-visible {
+				outline: 3px solid var(--color-link);
+				outline-offset: 8px;
 			}
 		}
 	}
@@ -149,8 +161,11 @@ header {
 	padding: 0.5rem;
 	outline: 2px solid var(--color-surface-hover);
 
-	&:hover, &:focus-visible {
+	&:hover {
 		color: var(--color-text-primary);
+	}
+	&:focus-visible {
+		outline: 3px solid var(--color-link);
 	}
 }
 .article {
@@ -173,13 +188,16 @@ header {
 	}
 	&:last-child {
 		border-block-end: none !important;
-		outline: none;
 		border-end-start-radius: 0.75rem;
 		border-end-end-radius: 0.75rem;
 	}
 
-	&:hover, &:focus-visible {
+	&:hover {
 		background-color: var(--color-surface);
+	}
+
+	&:focus-visible {
+		outline: 3px solid var(--color-link);
 	}
 
 	& .title {
@@ -223,9 +241,13 @@ header {
 		color: var(--color-text-very-muted);
 		text-decoration: none;
 
-		&:hover,
-		&:focus-visible {
+		&:hover {
 			color: var(--color-link);
+		}
+		&:focus-visible {
+			outline: 2px solid var(--color-link);
+			outline-offset: 8px;
+			color: var(--color-link)
 		}
 	}
 
@@ -247,6 +269,13 @@ header {
 sup:target {
 	border-radius: 0.25em;
 	animation: footnote-highlight 2.5s ease-out forwards;
+}
+sup a {
+	&:focus-visible {
+		outline: 2px solid var(--color-link);
+		outline-offset: 2px;
+		border-radius: 0;
+	}
 }
 
 @keyframes footnote-highlight {
@@ -304,6 +333,12 @@ sup:target {
 	justify-content: center;
 
 	cursor: pointer;
+
+	&:focus-visible {
+		outline: 2px solid var(--color-link);
+		outline-offset: 8px;
+		border-radius: 0.25rem;
+	}
 }
 
 .main-nav {
@@ -338,5 +373,5 @@ sup:target {
 .skip-to-content-link:focus,
 .skip-to-content-link:focus-visible {
 	top: 0;
-	outline: 3px solid var(--color-link);
+	outline: 2px solid var(--color-link);
 }
