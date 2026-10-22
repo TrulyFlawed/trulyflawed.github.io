@@ -17,7 +17,7 @@
 		<div class="post-metadata">
 			<div class="author">{{ page.author }}</div>
 			<hr />
-			<div class="date">{{ page.date | date: "%B %-d, %Y" }}</div>
+			<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
 		</div>
 
 		<!-- <br> -->
