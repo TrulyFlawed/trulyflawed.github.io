@@ -319,3 +319,24 @@ sup:target {
 	.main-nav a { display: none; }
 	.main-nav .menu-icon { display: flex; }
 }
+
+.skip-to-content-link {
+	position: absolute;
+	top: -40px;
+	transform: translateX(-50%);
+	left: 50%;
+	z-index: 9999;
+
+	padding: 0.5rem 1rem;
+	background: var(--color-bg-primary);
+	color: var(--color-text-primary);
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.skip-to-content-link:focus,
+.skip-to-content-link:focus-visible {
+	top: 0;
+	outline: 3px solid var(--color-link);
+}
