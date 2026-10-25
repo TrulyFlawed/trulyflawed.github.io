@@ -18,9 +18,14 @@ header {
 	}
 
 	& a {
+		--underline-offset: 0.35em;
+		--underline-thickness: 0.125rem;
+		--underline-color: var(--_color-link, var(--color-link));
+		--underline: underline var(--underline-color) var(--underline-thickness);
+
 		color: var(--color-text-primary);
 		text-decoration: none;
-		transition: color 0.15s ease;
+		transition: color 0.15s ease, text-decoration-color 0.15s ease;
 
 		&:hover {
 			color: var(--color-link);
@@ -28,6 +33,19 @@ header {
 		&:focus-visible {
 			outline: 2px solid var(--color-link);
 			outline-offset: 8px;
+		}
+
+		&[aria-current="page"],
+		&[data-section="current"] {
+			text-decoration: var(--underline);
+			text-underline-offset: var(--underline-offset);
+		}
+		/* Highlight blog nav item dimly when reading blog post, since it's not an exact page match and thus not helpful for aria */
+		&[data-section="current"] {
+			--_color-link: var(--color-text-very-muted);
+			&:hover {
+				text-decoration-color: var(--color-link);
+			}
 		}
 	}
 
