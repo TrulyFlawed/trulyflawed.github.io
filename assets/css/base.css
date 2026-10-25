@@ -18,6 +18,10 @@
   font-display: swap;
 }
 
+html {
+	scrollbar-gutter: stable;
+}
+
 body {
 	display: grid;
 	grid-template-rows: auto 1fr auto; /* Let body take up as much room as possible, creating a sticky footer. */

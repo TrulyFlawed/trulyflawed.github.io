@@ -20,6 +20,7 @@ header {
 	& a {
 		color: var(--color-text-primary);
 		text-decoration: none;
+		transition: color 0.15s ease;
 
 		&:hover {
 			color: var(--color-link);
@@ -291,22 +292,33 @@ sup a {
 }
 
 #my-sidebar {
+	--sidebar-duration: 0.3s;
+	--sidebar-shadow: -0.5rem 0 2rem rgb(0 0 0 / 0.35);
+	--sidebar-closed: calc(100% + 3rem); /* Used to move sidebar far enough past screen to hide the box shadow before disappearing at animation end. */
+	--backdrop-color: rgb(0 0 0 / 0.5);
+
 	position: fixed;
-	inset: auto;
-	top: 0;
-	right: -100%;
+	inset: 0 0 auto auto;
+
 	width: 100%;
 	height: 100vh;
-	transition: right 0.3s ease;
 
 	color: var(--color-text-primary);
 	background-color: var(--color-surface);
 
-	overflow: auto;
-	overscroll-behavior: none;
+	translate: var(--sidebar-closed) 0;
+	box-shadow: var(--sidebar-shadow);
+	transition:
+		background-color 0.15s ease,
+		translate var(--sidebar-duration, 0.3s) ease,
+		display var(--sidebar-duration, 0.3s) allow-discrete,
+		overlay var(--sidebar-duration, 0.3s) allow-discrete; /* Unsupported in Firefox/Safari for now. Progressive enhancement. */
+
+	overflow: hidden;
+	overscroll-behavior: contain;
 
 	border: none;
-	padding: 1.25rem;
+	padding: 1.25rem 1.5rem;
 
 	& nav {
 		display: flex;
@@ -320,7 +332,35 @@ sup a {
 }
 
 #my-sidebar:popover-open {
-	right: 0;
+	translate: 0 0;
+
+	@starting-style {
+		translate: var(--sidebar-closed) 0;
+	}
+}
+
+html:has(#my-sidebar:popover-open) { overflow: hidden }
+
+#my-sidebar::backdrop {
+	background-color: rgb(0 0 0 / 0);
+	transition:
+		background-color var(--sidebar-duration, 0.3s) ease,
+		display var(--sidebar-duration, 0.3s) allow-discrete,
+		overlay var(--sidebar-duration, 0.3s) allow-discrete;
+}
+
+#my-sidebar:popover-open::backdrop {
+	background-color: rgb(0 0 0 / 0.5);
+
+	@starting-style {
+		background-color: rgb(0 0 0 / 0);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#my-sidebar {
+		--sidebar-duration: 0s;
+	}
 }
 
 .menu-icon {
@@ -333,6 +373,11 @@ sup a {
 	justify-content: center;
 
 	cursor: pointer;
+
+	transition: color 0.15s ease;
+
+	/* Let me spam the menu button on mobile without zooming in */
+	touch-action: manipulation;
 
 	&:focus-visible {
 		outline: 2px solid var(--color-link);
