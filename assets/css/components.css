@@ -314,7 +314,7 @@ sup a {
 		display var(--sidebar-duration, 0.3s) allow-discrete,
 		overlay var(--sidebar-duration, 0.3s) allow-discrete; /* Unsupported in Firefox/Safari for now. Progressive enhancement. */
 
-	overflow: hidden;
+	overflow: hidden auto;
 	overscroll-behavior: contain;
 
 	border: none;
