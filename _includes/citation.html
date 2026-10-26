@@ -33,11 +33,11 @@
     {%- if author_parts.size == 1 -%}
       {%- assign author_string = author_parts[0] | append: ". " -%}
     {%- elsif author_parts.size > 1 -%}
-      {%- assign author_string = author_parts[0] | append: ", et. al." -%}
+      {%- assign author_string = author_parts[0] | append: ", et al. " -%}
     {%- endif -%}
   {%- endif -%}
 
-  {%- if author_string -%}{{ author_string }} {% endif -%}
+  {%- if author_string != "" -%}{{ author_string }}{%- endif -%}
 
   {%- comment %} === LINKED TITLE === {%- endcomment %}
   {%- assign link_text = cited.title | strip -%}
