@@ -21,17 +21,9 @@ defaults:
 
 exclude:
   - README.md
-
-include:
-  # - _citations/
-  - _pages/
-  - _assets/
-
-collections:
-  pages:
-    output: true
-  citations: # Just need this here so Jekyll will actually process files in this directory.
-    output: false
+  - LICENSE.md
+  - LICENSE-SOURCE.md
+  - LICENSE-CONTENT.md
 
 plugins:
   - jekyll-sitemap
