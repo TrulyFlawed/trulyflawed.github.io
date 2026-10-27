@@ -170,10 +170,12 @@ header {
 }
 .blog-redirect-button {
 	display: flex;
+	justify-content: end;
+	margin-block-start: 1rem;
 }
 .basic-link {
+	display: inline-block;
 	margin-inline-start: auto;
-	margin-block-start: 1rem;
 	color: var(--color-text-muted);
 	text-decoration: none;
 
