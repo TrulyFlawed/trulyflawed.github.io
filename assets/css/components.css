@@ -180,13 +180,15 @@ header {
 	text-decoration: none;
 
 	padding: 0.5rem;
-	outline: 2px solid var(--color-surface-hover);
+	border: 2px solid var(--color-surface-hover);
+	border-radius: 0.25rem;
 
 	&:hover {
 		color: var(--color-text-primary);
 	}
 	&:focus-visible {
 		outline: 3px solid var(--color-link);
+		outline-offset: 8px;
 	}
 }
 .article {
