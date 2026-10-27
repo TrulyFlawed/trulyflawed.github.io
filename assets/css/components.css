@@ -173,7 +173,7 @@ header {
 	justify-content: end;
 	margin-block-start: 1rem;
 }
-.basic-link {
+.boxed-link {
 	display: inline-block;
 	margin-inline-start: auto;
 	color: var(--color-text-muted);
