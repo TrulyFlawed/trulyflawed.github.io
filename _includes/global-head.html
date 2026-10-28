@@ -19,8 +19,11 @@
 <meta property="og:site_name" content="{{ site.title }}" />
 <meta property="og:locale" content="en_US" />
 
+{% unless page.url == "/404.html" %}
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
+{% endunless %}
+{% if page.url == "/404.html" %}<meta name="robots" content="noindex">{% endif %}
 
 <meta property="og:image" content="{{ '/assets/images/likely-temp-preview-card-image.jpg' | absolute_url }}">
 <meta property="og:image:width" content="960">

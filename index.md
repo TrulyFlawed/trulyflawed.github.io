@@ -27,5 +27,5 @@ Web developer, writer, and designer.
 	{% endfor %}
 </div>
 <div class="blog-redirect-button">
-	<a href="/blog" class="basic-link">See all blog posts</a>
+	<a href="/blog" class="boxed-link">See all blog posts</a>
 </div>
