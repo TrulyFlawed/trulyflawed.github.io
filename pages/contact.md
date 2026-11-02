@@ -11,6 +11,6 @@ Want to get in touch? Feel free to hit me up! A small, thoughtful message means 
 - Message me on Signal at `duskfall.01`
 - Email me at <a href="mailto:hiya@duskfall.dev">hiya@duskfall.dev</a>
 
-I respond as soon as I can, responses generally within 24 hours. I'm based in the United States in Central Standard Time (UTC-6). I'm open to most inquiries, but I will not do commissions.
+I respond as soon as I can, generally within 24 hours. My time zone is US Central Time (America/Chicago). I'm open to most inquiries, but I will not do commissions.
 
 You can find me online at any of the links found at [my link tree](/links/).
