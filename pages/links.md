@@ -11,7 +11,6 @@ A canonical list of everywhere I can be found online. Contact information can al
 - [Bluesky](https://bsky.app/profile/duskfall.dev)
 - [GitHub](https://github.com/TrulyFlawed)
 - [Ko-fi](https://ko-fi.com/duskhasfallen)
-- [Email](mailto:duskfall.personal@protonmail.com)
 
 ## Open data / knowledge
 
