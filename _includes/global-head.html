@@ -5,7 +5,8 @@
 <title>{{ page.title }} | {{ site.title }}</title>
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/index.css" />
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32" />
+<link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml" sizes="any" />
 
 <meta property="og:title" content="{{ page.title }}" />
 {% assign meta_description = page.description
